@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Devoted Son – Q&amp;A</title>
+  <style>
+    :root{
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --accent-weak: #dbeafe;
+      --radius: 14px;
+      --shadow: 0 2px 12px rgba(0,0,0,.06);
+      --maxw: 1000px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #0b0f16;
+        --card: #0f1623;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --border: #1f2937;
+        --accent: #60a5fa;
+        --accent-weak: #111b2d;
+        --shadow: 0 4px 16px rgba(0,0,0,.45);
+      }
+    }
+    *{box-sizing:border-box}
+    html, body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 24px auto 64px;
+      padding: 0 16px;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom: 18px;
+    }
+    .title{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    h1{
+      margin:0;
+      font-size: clamp(1.5rem, 1.2rem + 1.8vw, 2.2rem);
+      letter-spacing: .2px;
+    }
+    .sub{
+      margin:0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .chip{
+      border:1px solid var(--border);
+      background: var(--card);
+      padding:8px 12px;
+      border-radius: 999px;
+      font-size:.9rem;
+      box-shadow: var(--shadow);
+      text-decoration:none;
+      color: inherit;
+    }
+    .chip:hover{border-color: var(--accent);}
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    details.qa{
+      border-bottom:1px solid var(--border);
+      background: linear-gradient(180deg, transparent, transparent 60%, var(--accent-weak));
+    }
+    details.qa:last-child{border-bottom: none;}
+    summary{
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      font-weight:600;
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+    summary::-webkit-details-marker{display:none}
+    .qnum{
+      width: 34px; height: 34px;
+      flex: 0 0 34px;
+      display:grid; place-items:center;
+      border-radius: 50%;
+      background: var(--accent-weak);
+      color: var(--accent);
+      border: 1px solid var(--border);
+      font-weight:700;
+    }
+    .qtext{flex:1}
+    .answer{
+      padding: 0 20px 18px 20px;
+      color: var(--text);
+    }
+    .section{
+      margin-top: 26px;
+    }
+    .section h2{
+      margin: 8px 0 12px;
+      font-size: 1.2rem;
+      color: var(--muted);
+      font-weight:700;
+      letter-spacing:.3px;
+      text-transform: uppercase;
+    }
+    .footer{
+      margin-top: 28px;
+      color: var(--muted);
+      font-size:.9rem;
+      text-align:center;
+    }
+    /* Print styles */
+    @media print{
+      body{background:#fff}
+      .chip, nav{display:none}
+      .wrap{margin:0; max-width:none}
+      .card{box-shadow:none; border-color:#ddd}
+      summary{padding:10px 14px}
+      .answer{padding: 0 14px 12px 14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>A Devoted Son – Q&amp;A</h1>
+        <p class="sub">From Anita Desai’s short story • Prepared for presentation &amp; viva</p>
+      </div>
+      <nav aria-label="Sections">
+        <a class="chip" href="#short">Short Questions</a>
+        <a class="chip" href="#context">Reference to the Context</a>
+        <a class="chip" href="#beyond">Beyond the Text</a>
+      </nav>
+    </header>
+
+    <section id="short" class="section">
+      <h2>Short Questions</h2>
+      <div class="card">
+        <details class="qa" open>
+          <summary><span class="qnum">1</span><span class="qtext">In your view, what are the qualities of a devoted son/daughter?</span></summary>
+          <div class="answer">
+            A devoted son or daughter respects and obeys their parents, fulfills their expectations, and takes care of them in times of need. They show love, gratitude, and responsibility, not only by supporting their parents financially but also by giving them emotional comfort and dignity in old age.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">2</span><span class="qtext">How did the morning papers bring ambiance of celebration in the Varma family?</span></summary>
+          <div class="answer">
+            The morning newspapers carried the news of Rakesh standing first in the medical entrance examination. His name was printed at the top of the list, which made his family extremely proud. This achievement brought an atmosphere of joy and celebration in the Varma household.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">3</span><span class="qtext">How did the community celebrate Rakesh’s success?</span></summary>
+          <div class="answer">
+            The community celebrated Rakesh’s success with great excitement. Relatives and neighbors came to congratulate him, garlanded him, and offered sweets. They treated his success as if it was their own, because he had brought honor to the whole community.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">4</span><span class="qtext">Why was Rakesh’s success a special matter of discussion in the neighbourhood?</span></summary>
+          <div class="answer">
+            Rakesh’s success was special because he was the son of an illiterate vegetable seller, yet he had topped the medical examination. Such an extraordinary achievement from a humble background surprised everyone and became the main topic of discussion in the neighborhood.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">5</span><span class="qtext">How does the author make fun with the words ‘America’ and ‘the USA’?</span></summary>
+          <div class="answer">
+            The author humorously presents the ignorance of the villagers by showing how they used “America” and “the USA” as if they were two different places. Their confusion reflects their limited knowledge of the outside world.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">6</span><span class="qtext">How does the author characterize Rakesh’s wife?</span></summary>
+          <div class="answer">
+            Rakesh’s wife, Veena, is portrayed as a simple and traditional woman chosen by his parents. She is not highly educated or fashionable, but she is dutiful, obedient, and adjusts well into the family. She represents the typical daughter-in-law of a middle-class Indian household.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">7</span><span class="qtext">Describe how Rakesh rises in his career.</span></summary>
+          <div class="answer">
+            Rakesh begins as a brilliant student and tops the medical examination. He works in a city hospital and later goes abroad to pursue higher studies. After returning to India, he becomes the director of the city hospital and earns great respect and reputation as a successful doctor.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">8</span><span class="qtext">Why did the old man try to bribe his grandchildren?</span></summary>
+          <div class="answer">
+            The old man, Varma, tried to bribe his grandchildren with money so they would secretly bring him the sweets and fried foods that Rakesh had forbidden. He longed for these small pleasures of life, even though they were harmful to his health, because he felt deprived and unhappy under his son’s strict diet control.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">9</span><span class="qtext">Are Mr. Varma’s complaints about his diets reasonable? How?</span></summary>
+          <div class="answer">
+            Yes, Mr. Varma’s complaints are reasonable to some extent. Although Rakesh’s restrictions were for his father’s health, they made him feel deprived of joy and freedom. At his old age, emotional satisfaction and happiness were as important as medicine. Hence, his dissatisfaction with the strict diet was natural.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="context" class="section">
+      <h2>Reference to the Context</h2>
+      <div class="card">
+        <details class="qa">
+          <summary><span class="qnum">10</span><span class="qtext">How did Varma couple make sacrifices for their son’s higher education?</span></summary>
+          <div class="answer">
+            The Varma couple worked hard and lived a very simple life to educate Rakesh. His father, though an illiterate vegetable seller, saved money with great effort, and his mother managed the household frugally. They gave up their comforts and ambitions so that Rakesh could pursue higher education and become a doctor.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">11</span><span class="qtext">After his wife’s death, Varma suffers from diseases one after another. Would he have enjoyed better health if she had not died before him? Give reasons.</span></summary>
+          <div class="answer">
+            Yes, he might have enjoyed better health if his wife had not died before him. She was his emotional support, companion, and caretaker. Her presence could have reduced his loneliness and provided him comfort, which might have improved his mental and physical well-being. Her absence made him feel neglected and more vulnerable to illness.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">12</span><span class="qtext">Dr. Rakesh is divided between a doctor and a son. What else could he have done to make his father’s final years more comfortable?</span></summary>
+          <div class="answer">
+            Besides giving medical treatment, Rakesh could have paid more attention to his father’s emotional needs. He could have allowed his father occasional small pleasures like sweets or fried food in moderation, listened patiently to his feelings, and shown more affection. By balancing medical care with emotional comfort, he could have made his father’s final years happier and more peaceful.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">13</span><span class="qtext">What does the story say about the relationship between grandfather and grandchildren?</span></summary>
+          <div class="answer">
+            The story shows a loving and playful relationship between the grandfather and the grandchildren. Mr. Varma, despite his poor health, enjoyed their company and even tried to bribe them with money to get sweets and fried food secretly. This shows the bond of affection and trust between generations, but also highlights his craving for freedom against Rakesh’s strict control.
+          </div>
+        </details>
+
+        <details class="qa">
+          <summary><span class="qnum">14</span><span class="qtext">Do you call Rakesh a devoted son? Give reasons.</span></summary>
+          <div class="answer">
+            Yes, Rakesh can be called a devoted son because he respected his parents, fulfilled their dreams by becoming a doctor, and cared for his father in old age. However, his devotion sometimes became over-controlling, as he focused only on physical health and ignored his father’s emotional needs. His devotion was sincere, but it lacked balance between love and strictness.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="beyond" class="section">
+      <h2>Beyond the Text</h2>
+      <div class="card">
+        <details class="qa">
+          <summary><span class="qnum">15</span><span class="qtext">Medicines replace our diets in old age. What can be done to make old age less dependent on medicine?</span></summary>
+          <div class="answer">
+            Old age can be made less dependent on medicine through healthy habits and supportive care. A balanced diet rich in fruits, vegetables, and whole grains can keep the body strong. Regular exercise such as walking or yoga helps prevent many diseases. Emotional support from family members reduces stress and loneliness, which also improves health. Preventive health checkups can help in early detection of problems before they become serious. Finally, involving elderly people in light activities, social groups, and hobbies keeps them active and happy.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>Prepared from class notes for quick revision and viva.</p>
+    </div>
+  </div>
+</body>
+</html>
